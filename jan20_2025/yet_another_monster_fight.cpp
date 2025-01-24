@@ -5,20 +5,6 @@
 
 using namespace std;
 
-vector<int> sorted(vector<int> original){
-    vector<int> result;
-    for(int i  = 0; i < original.size(); i++){
-        int temp = original[i];
-        for(int j = i+1; j < original.size(); j++){
-            if(original[i] < original[j]){
-               temp = original[j]; 
-            }
-        }
-        result.push_back(temp);
-    }
-    return result;
-}
-
 int main(){
     int n;
     cin >> n;
@@ -28,11 +14,27 @@ int main(){
         cin >> temp;
         hp.push_back(temp);
     }
+    map<int , int> index_map;
+    for(auto element: hp){
+        index_map[element] = find(hp.begin(), hp.end(), element) - hp.begin();
+    }
+    sort(hp.begin(), hp.end());
+    reverse(hp.begin(), hp.end());
 
-    vector<int> sorted_hp = sorted(hp);
-    int spell_power = sorted_hp[0];
-    bool multi_count = (count(hp.begin(), hp.end(), spell_power) == hp.size());
+    int min_strength = hp[0];
+    int extra = 0;
+    for(int i = 0; i < hp.size() - 1; i++){
+        if(hp[i] > hp[i+1] && index_map[hp[i]] < index_map[hp[i+1]]){
+            if(!((index_map[hp[i]] + 1) < index_map[hp[0]] || (index_map[hp[i]]) > index_map[hp[0]])){
+                if(min_strength - i  - hp[i] <= 0){
+                    extra++;
+                }
+            }
+        }
+    }
 
-    // will be continued tomorrow, prolly we'll use a BST to appraoch this problem
+    min_strength += extra;
+
+    cout << min_strength << endl;
 
 }
