@@ -5,6 +5,7 @@
         "vector": "cpp",
         "xutility": "cpp",
         "iostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "cmath": "cpp"
     }
 }
