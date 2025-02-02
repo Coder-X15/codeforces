@@ -1,0 +1,7 @@
+## Today's Problems: (Rating in Brackets)
+1. [Soldiers and Bananas (800)](https://codeforces.com/problemset/problem/546/A)
+2. [Word (800)](https://codeforces.com/problemset/problem/59/A)
+3. [Wrong Subtraction (800)](https://codeforces.com/problemset/problem/977/A)
+4. [Nearly Luck Number (800)](https://codeforces.com/problemset/problem/110/A)
+5. [Anton and Danik (800)](https://codeforces.com/problemset/problem/734/A)
+6. [Transaltion (800)](https://codeforces.com/problemset/problem/41/A)
