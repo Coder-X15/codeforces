@@ -1,0 +1,5 @@
+## Today's Problems: (Rating in Brackets)
+1. [Tram (800)](https://codeforces.com/problemset/problem/116/A)
+2. [Vanya and Fence (800)](https://codeforces.com/problemset/problem/677/A)
+3. [Beautiful Year (800)](https://codeforces.com/problemset/problem/271/A)
+4. [Queue at School (800)](https://codeforces.com/problemset/problem/266/B)
